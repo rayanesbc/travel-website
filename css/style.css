@@ -82,6 +82,11 @@ a {
 /* *****************Header Start***************** */
 header {
   background: var(--primary-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 6;
+  width: 100%;
 }
 
 .logo img {
@@ -128,3 +133,85 @@ nav ul li:hover::before {
   width: 100%;
 }
 /* *****************Header Close***************** */
+
+/* *****************Showcase Start***************** */
+main {
+  position: relative;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.swiper {
+  height: 100vh;
+}
+
+.slider-container {
+  width: 100%;
+}
+
+.slider-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-overlay {
+  position: absolute;
+  z-index: 5;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  width: 100%;
+  font-family: "ubuntu";
+  transform: translate(-50%, -50%);
+}
+
+.img-overlay p {
+  font-size: 1rem;
+  letter-spacing: 8px;
+  color: var(--white-color);
+  animation: animate 4s forwards;
+}
+
+.img-overlay h2 {
+  font-size: 3rem;
+  color: var(--white-color);
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  animation: animate 4s forwards;
+  transition: all 0.5s ease-in-out;
+}
+
+.overlay {
+  position: relative;
+}
+
+.overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  70% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-0%);
+  }
+} /* *****************Showcase Close***************** */
