@@ -72,7 +72,7 @@ a {
   background-color: var(--primary-color);
   border: none;
   padding: 0.7rem;
-  font-size: 1.7rem;
+  font-size: 0.8rem;
   border-radius: 4px;
   color: var(--white-color);
   cursor: pointer;
@@ -90,7 +90,7 @@ header {
 }
 
 .logo img {
-  width: 40%;
+  width: 30%;
   height: 100%;
   object-fit: cover;
 }
@@ -113,7 +113,7 @@ nav ul li {
 
 nav ul li a {
   color: var(--white-color);
-  font-size: 1.1rem;
+  font-size: 0.8rem;
 }
 
 nav ul li::before {
@@ -158,6 +158,20 @@ main {
   object-fit: cover;
 }
 
+.overlay {
+  position: relative;
+}
+
+.overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
 .img-overlay {
   position: absolute;
   z-index: 5;
@@ -185,20 +199,6 @@ main {
   transition: all 0.5s ease-in-out;
 }
 
-.overlay {
-  position: relative;
-}
-
-.overlay::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-}
-
 @keyframes animate {
   0% {
     transform: translateX(-50%);
@@ -214,4 +214,42 @@ main {
     opacity: 1;
     transform: translateX(-0%);
   }
-} /* *****************Showcase Close***************** */
+}
+
+.img-overlay h2 span {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--white-color);
+}
+/* *****************Showcase Close***************** */
+/* *****************Search Location Start***************** */
+#location-search {
+  transform: translateY(-105%);
+}
+
+.form-wrapper {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-control {
+  width: 100%;
+}
+
+form input,
+select {
+  padding: 0.6rem;
+  outline: none;
+  font-size: 0.8rem;
+  color: #000000;
+  border: 1px solid var(--light-gray-color);
+  margin: 0 0.4rem;
+  border-radius: 4px;
+}
+/* *****************Search Location Close***************** */
