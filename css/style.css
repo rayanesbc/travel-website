@@ -132,6 +132,14 @@ nav ul li:hover::before {
   opacity: 1;
   width: 100%;
 }
+
+.btn {
+  font-size: 1.3rem;
+  color: var(--white-color);
+  cursor: pointer;
+  display: none;
+}
+
 /* *****************Header Close***************** */
 
 /* *****************Showcase Start***************** */
