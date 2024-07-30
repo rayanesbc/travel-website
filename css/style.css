@@ -37,7 +37,7 @@ a {
   text-decoration: none;
 }
 
-.headind-normal-txt {
+.heading-normal-txt {
   font-size: 1rem;
   letter-spacing: 6px;
   color: var(--primary-color);
@@ -61,7 +61,7 @@ a {
 }
 
 .lead {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 2;
   text-align: justify;
 }
@@ -261,3 +261,73 @@ select {
   border-radius: 4px;
 }
 /* *****************Search Location Close***************** */
+
+/* *****************About Start***************** */
+.about-content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 3rem;
+  margin: 3rem 0;
+}
+
+.about-content-wrapper .heading-normal-txt,
+.about-content-wrapper .headings {
+  text-transform: uppercase;
+}
+
+.about-content-wrapper h2 span {
+  color: var(--primary-color);
+  font-family: "ubuntu";
+}
+
+.about-content-wrapper ul {
+  list-style-type: none;
+}
+
+.about-content-wrapper ul .icons {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.about-content-wrapper ul .icons i {
+  background: var(--primary-color);
+  color: var(--white-color);
+  padding: 0.8rem;
+  border-radius: 50%;
+}
+
+.about-content-wrapper ul p {
+  margin-left: 1rem;
+}
+
+.agency-right-side .img {
+  position: relative;
+}
+
+.agency-right-side .img img {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+  transition: 0.5s ease-in;
+}
+
+.agency-right-side .img::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 30px;
+  bottom: 0;
+  right: 0;
+  background: var(--primary-color);
+  width: 70%;
+  height: 100%;
+  z-index: -2;
+}
+
+.agency-right-side .img img:hover {
+  transform: scale(0.95);
+}
+/* *****************About Close***************** */
