@@ -100,4 +100,18 @@
     font-size: 0.8rem;
     margin: 0 0.4rem;
   }
+
+  /* about */
+  .about-content-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .agency-right-side .img img {
+    width: 90%;
+  }
+
+  .agency-right-side .img::before {
+    left: 20px;
+    width: 90%;
+  }
 }
