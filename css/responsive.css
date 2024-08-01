@@ -1,8 +1,4 @@
 @media (max-width: 1024px) {
-  .container {
-    padding: 0 2rem;
-  }
-
   /* slider  */
   .swiper {
     height: 90vh;
