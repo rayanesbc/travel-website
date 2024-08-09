@@ -420,67 +420,65 @@ select {
 }
 /* *****************Choose Place Close***************** */
 
-/* *****************Numbers Start***************** */
-.numbers-container {
-  width: 100%;
-}
-
-.imagem-content img {
-  height: 340px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.layer {
+/* *****************Counter Numbers Start***************** */
+#static-counter {
+  padding: 6rem 0;
+  background: url("../img/maldives2.jpg") no-repeat center center/cover;
+  background-attachment: fixed;
   position: relative;
 }
 
-.layer::after {
+#static-counter::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
 }
 
-.numbers-content {
-  display: flex;
+.static-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  text-align: center;
   align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  gap: 6rem;
-  position: absolute;
-  top: 110px;
-  left: 180px;
-  color: var(--white-color);
+  height: 100%;
+  padding: 2rem 0;
 }
 
 .content-info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 0.5rem;
-  z-index: 10;
   cursor: pointer;
+  z-index: 10;
+  color: var(--white-color);
 }
 
-.numbers-content .content-info p {
-  font-family: "Verdana";
-  font-size: 0.8rem;
-}
-
-.numbers-content .content-info h2 {
-  font-size: 1.8rem;
-}
-
-.numbers-content .content-info i {
+.content-info i {
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
   border: 1px solid var(--white-color);
   padding: 1.2rem;
   border-radius: 50%;
+  transition: all 0.3s ease-in;
 }
-/* *****************Numbers Close***************** */
+
+.content-info h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.content-info p {
+  font-family: "Verdana";
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.content-info i:hover {
+  background: var(--primary-color);
+  border: none;
+  transform: translateY(-20%);
+}
+
+/* *****************Counter Numbers Close***************** */
