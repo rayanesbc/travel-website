@@ -110,4 +110,19 @@
     left: 20px;
     width: 90%;
   }
+
+  /* choose place */
+  .choose-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .row-wise-img {
+    grid-template-columns: 1fr;
+  }
+
+  /* counter numbers */
+  .static-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+  }
 }
