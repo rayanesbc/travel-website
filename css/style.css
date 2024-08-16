@@ -618,3 +618,75 @@ select {
 }
 
 /* *****************Video Background Close***************** */
+
+/* *****************Travel Countries Start***************** */
+#travel-countries {
+  padding: 4rem 0;
+}
+
+#travel-countries .heading-normal-txt,
+#travel-countries .headings {
+  text-transform: uppercase;
+}
+
+#travel-countries .headings {
+  margin-bottom: 1rem;
+}
+
+.travel-countries-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  width: 100%;
+  grid-gap: 2rem;
+  margin-bottom: 8rem;
+}
+
+.countries-content .secondary-headings {
+  text-transform: uppercase;
+}
+
+.countries-content ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  margin: 1rem 0;
+}
+
+.countries-content ul li {
+  margin: 1.5rem 0;
+}
+
+.countries-content ul i {
+  margin-right: 0.5rem;
+}
+
+.slider-content-wrapper {
+  overflow: hidden;
+}
+
+.swiper3 .hidden-content-carousel {
+  padding: 0.4rem 2rem 1.5rem 2rem;
+  color: transparent;
+  transition: all 0.6s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.swiper3 .hidden-content-carousel i {
+  margin-right: -0.7rem;
+}
+
+.swiper3 .carousel:hover .hidden-content-carousel {
+  color: var(--white-color);
+}
+
+.france-content {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-gap: 2rem;
+  width: 100%;
+}
+/* *****************Travel Countries Close***************** */
