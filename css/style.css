@@ -690,3 +690,71 @@ select {
   width: 100%;
 }
 /* *****************Travel Countries Close***************** */
+
+/* *****************Travel Blog Start***************** */
+#travel-blog {
+  background-color: var(--blue-color);
+  padding: 6rem 0;
+  margin: 2rem 0;
+}
+
+#travel-blog .heading-normal-txt,
+#travel-blog .headings {
+  text-transform: uppercase;
+}
+
+.blog-content {
+  position: relative;
+}
+
+.blog-content:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.blog-img-overlay {
+  width: 100%;
+}
+
+.blog-infos {
+  position: absolute;
+  bottom: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  padding: 2rem 1rem;
+  transform: translateY(0%);
+  color: var(--white-color);
+  transition: all 0.5s ease-in;
+}
+
+.blog-content:hover .blog-infos {
+  transform: translateY(-30%);
+}
+
+.blog-infos h2 {
+  color: var(--light-gray-color);
+  font-size: 1.2rem;
+}
+
+.blog-infos p {
+  color: var(--light-gray-color);
+  font-size: 0.8rem;
+  padding-top: 0.5rem;
+}
+
+.blog-date {
+  background: var(--primary-color);
+  color: var(--white-color);
+  padding: 0.5rem 1rem;
+  position: absolute;
+  top: 10px;
+  right: 0px;
+}
+
+/* *****************Travel Blog Close***************** */
