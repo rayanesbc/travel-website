@@ -1,3 +1,4 @@
+// SWIPER 1 - SHOWCASE START
 const swiper = new Swiper(".swiper", {
   slidePerView: 1,
   effect: "creative",
@@ -21,6 +22,7 @@ const swiper = new Swiper(".swiper", {
   spaceBetween: 100,
 });
 
+// SWIPER 2 - TOP DESTINATION
 const swiper2 = new Swiper(".swiper2", {
   slidePerView: 3,
   spaceBetween: 35,
@@ -63,6 +65,7 @@ const swiper2 = new Swiper(".swiper2", {
   },
 });
 
+// SWIPER 3 - TRAVEL COUNTRIES
 const swiper3 = new Swiper(".swiper3", {
   slidePerView: 2,
   spaceBetween: 35,
@@ -93,6 +96,7 @@ const swiper3 = new Swiper(".swiper3", {
   },
 });
 
+// SWIPER 4 - TRAVEL BLOG
 const swiper4 = new Swiper(".swiper4", {
   slidePerView: 2,
   spaceBetween: 35,
@@ -119,6 +123,37 @@ const swiper4 = new Swiper(".swiper4", {
     //when window width is >= 900px
     900: {
       slidesPerView: 3,
+    },
+  },
+});
+
+// SWIPER 5 - TESTIMONIALS
+const swiper5 = new Swiper(".swiper5", {
+  slidePerView: 1,
+  spaceBetween: 95,
+  slidesPerGroup: 1,
+  loop: true,
+  fade: true,
+  centerSlide: true,
+  grabCursor: true,
+  loopfillGroupwithBlank: true,
+  autoplay: {
+    delay: 5000,
+  },
+  speed: 400,
+
+  breakpoints: {
+    //when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+    },
+    //when window width is >= 700px
+    700: {
+      slidesPerView: 1,
+    },
+    //when window width is >= 900px
+    900: {
+      slidesPerView: 1,
     },
   },
 });

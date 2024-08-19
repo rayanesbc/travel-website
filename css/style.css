@@ -147,7 +147,6 @@ nav ul li:hover::before {
   cursor: pointer;
   display: none;
 }
-
 /* *****************Header Close***************** */
 
 /* *****************Showcase Start***************** */
@@ -237,6 +236,7 @@ main {
   -webkit-text-stroke: 1px var(--white-color);
 }
 /* *****************Showcase Close***************** */
+
 /* *****************Search Location Start***************** */
 #location-search {
   transform: translateY(-130%);
@@ -339,6 +339,7 @@ select {
   transform: scale(0.95);
 }
 /* *****************About Close***************** */
+
 /* *****************Choose Place Start***************** */
 #choose-place {
   padding: 6rem 0;
@@ -483,7 +484,6 @@ select {
   border: none;
   transform: translateY(-20%);
 }
-
 /* *****************Counter Numbers Close***************** */
 
 /* *****************Top Destination Start***************** */
@@ -554,7 +554,6 @@ select {
 .carousel:hover .hidden-content-carousel .i-color {
   color: var(--primary-color);
 }
-
 /* *****************Top Destination Close***************** */
 
 /* *****************Video Background Start***************** */
@@ -616,7 +615,6 @@ select {
 .video-content i {
   margin-right: 0.5rem;
 }
-
 /* *****************Video Background Close***************** */
 
 /* *****************Travel Countries Start***************** */
@@ -688,6 +686,7 @@ select {
   grid-template-columns: 3fr 2fr;
   grid-gap: 2rem;
   width: 100%;
+  margin-bottom: 2rem;
 }
 /* *****************Travel Countries Close***************** */
 
@@ -695,7 +694,6 @@ select {
 #travel-blog {
   background-color: var(--blue-color);
   padding: 6rem 0;
-  margin: 2rem 0;
 }
 
 #travel-blog .heading-normal-txt,
@@ -756,5 +754,62 @@ select {
   top: 10px;
   right: 0px;
 }
-
 /* *****************Travel Blog Close***************** */
+
+/* *****************Testimonials Start***************** */
+#testimonials {
+  padding: 6rem 0;
+  width: 100%;
+  background: url("../img/testimonials-background.jpg") no-repeat center
+    center/cover;
+  background-attachment: fixed;
+}
+
+#testimonials .heading-normal-txt,
+#testimonials .headings {
+  text-transform: uppercase;
+}
+
+#testimonials .heading-normal-txt {
+  color: var(--blue-color);
+}
+
+#testimonials .headings {
+  color: var(--white-color);
+}
+
+.testimonials-wrapper {
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.8);
+  color: var(--white-color);
+  padding: 2rem 6rem;
+}
+
+.testimonials-wrapper i {
+  color: var(--primary-color);
+}
+
+.testimonials-wrapper p {
+  text-align: center;
+}
+
+.testimonials-wrapper img {
+  width: 20%;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 2rem auto;
+}
+
+.testimonials-wrapper .icons {
+  text-align: center;
+}
+
+.testimonials-wrapper .name {
+  padding: 0.5rem 0;
+}
+
+.testimonials-wrapper .guest {
+  font-size: 0.75rem;
+}
+
+/* *****************Testimonials Close***************** */

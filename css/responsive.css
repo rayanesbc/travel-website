@@ -12,8 +12,6 @@
     font-size: 3rem;
     letter-spacing: 3px;
   }
-
-  /* top search */
 }
 
 @media (max-width: 900px) {
@@ -74,7 +72,6 @@
   }
 
   /* top search */
-
   #location-search {
     transform: translateY(0%);
   }
@@ -143,5 +140,10 @@
 
   .france-content {
     grid-template-columns: 2fr;
+  }
+
+  /* testimonials */
+  .testimonials-wrapper img {
+    width: 40%;
   }
 }
