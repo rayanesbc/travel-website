@@ -1,4 +1,8 @@
 @media (max-width: 1024px) {
+  .headings {
+    font-size: 2.2rem;
+  }
+
   /* slider  */
   .swiper {
     height: 90vh;
@@ -145,5 +149,15 @@
   /* testimonials */
   .testimonials-wrapper img {
     width: 40%;
+  }
+
+  /* footer */
+  .contact {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 4rem;
+  }
+
+  .quick-infos {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
